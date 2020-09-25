@@ -1,5 +1,5 @@
 #CONVERSION TO CSV
-"""
+
 from PIL import Image
 import numpy as np
 import sys
@@ -42,12 +42,13 @@ for file in myFileList:
     with open("name_you_want.csv", 'a') as f:
         writer = csv.writer(f)
         writer.writerow(value)
-"""
+
+
 #DOWNLOADING THE CSV
 
-"""
+
 import os
 os.chdir(r'../working')
 from IPython.display import FileLink
 FileLink(r'./name_you_want.csv')
-"""
+
